@@ -12,7 +12,7 @@ let sounds = {};
 // 2. Dynamically create <audio> tags and append them to the DOM
 Object.keys(soundSources).forEach((key) => {
   const audio = document.createElement("audio");
-  audio.id = audio-${key}; // Give it a unique ID
+  audio.id = `audio-${key}`; // Give it a unique ID
   audio.src = soundSources[key];
   document.body.appendChild(audio); // This makes Cypress happy!
   
