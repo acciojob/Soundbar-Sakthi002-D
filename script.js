@@ -1,11 +1,12 @@
-//your JS code here. If required.
 const sounds = ["applause", "boo", "gasp", "tada", "victory", "wrong"];
+
 const buttons = document.getElementById("buttons");
 
 let currentAudio = null;
 
-sounds.forEach(sound => {
+sounds.forEach((sound) => {
   const btn = document.createElement("button");
+
   btn.classList.add("btn");
   btn.innerText = sound;
 
@@ -34,4 +35,3 @@ stopBtn.addEventListener("click", () => {
 });
 
 buttons.appendChild(stopBtn);
-
